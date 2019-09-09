@@ -75,9 +75,10 @@ REST response body is below:
     }
 ```
 
-Other notes:
+Other notes and limitations:
 * When the device status is disable,you can not update the state.
 * When the device is not map the channel,you can not update the state.
+* Default update interval is 30sec. Please Do not specify a smaller value.
 
 
 # TODO
