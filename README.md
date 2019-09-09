@@ -12,7 +12,7 @@ prerequisite
     vi default.json
     (add credentials of ThingScale)
    
-Run agent
+Run agent  
 `node agent.js > /dev/null`
 
 
