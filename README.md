@@ -75,6 +75,10 @@ REST response body is below:
     }
 ```
 
+Other notes:
+* When the device status is disable,you can not update the state.
+* When the device is not map the channel,you can not update the state.
+
 
 # TODO
 * Allow remote reboot
