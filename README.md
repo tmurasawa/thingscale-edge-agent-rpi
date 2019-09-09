@@ -11,6 +11,16 @@ prerequisite
     mkdir config ; cd config
     vi default.json
     (add credentials of ThingScale)
+    cd ..
+
+Sample of default.json
+
+    {
+    "device_id":"<device_id>",
+    "user_id":"<thingscale_userid (ex:U000***)>",
+    "device_token":"<device_token (32bit hexadecimal token)"
+    }
+
    
 Run agent  
 `node agent.js > /dev/null`
