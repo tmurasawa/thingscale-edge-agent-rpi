@@ -92,5 +92,5 @@ Other notes and limitations:
 # TODO
 * Allow remote reboot
 * Allow remote GPIO control
-* Docker image
+* (DONE)Docker image
 
