@@ -10,7 +10,7 @@ var config = require('config')
 //var notifyEmitter = new events.EventEmitter()
 
 const log_level = process.env.LOG_LEVEL || 'debug'
-const scanInterval = 5;
+const scanInterval = 30;
 
 const mqtt_baseTopic    = process.env.MQTT_BASE_TOPIC || config.device_token + '/state'
 const mqtt_url          = process.env.MQTT_URL ||'mqtt://m.thingscale.io:1883'
