@@ -39,7 +39,7 @@ All done! have a fun.
 ## for docker
 TBD
 
-# Acknowledgemenkt
+# Acknowledgement
 Confirmed environment:  
 * Raspbian GNU/Linux 10 (buster)
 * k3s version v0.8.1
@@ -51,6 +51,7 @@ Health value condition:
 How can I get heath itmes?  
 You can access /v2/device/<device_id> from ThingScale REST API.  
 REST response body is below:  
+```
     [
         {
             "device_id": "k3s",
@@ -69,6 +70,7 @@ REST response body is below:
                 "last_update": "2019-09-09T16:05:27+09:00" // last update of agent's report time
             }
         }
+```
 
 
 # TODO
