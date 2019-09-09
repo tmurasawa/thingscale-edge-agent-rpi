@@ -8,8 +8,10 @@ ThingScale edge agent is an agent that monitors raspi health from ThingScale Clo
 
 # Quick Start
 ## for none-docker/k3s
-prerequisite:
+### prerequisite:
 * Installing k3s <https://k3s.io>
+
+### Download agent and installing libraries  
 
     cd <WORK_DIR>
     git clone https://github.com/tmurasawa/thingscale-edge-agent-rpi.git
@@ -28,7 +30,7 @@ Sample of default.json
     }
 
    
-Run agent  
+### Run agent  
 `node agent.js > /dev/null`
 
 All done! have a fun.
