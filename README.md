@@ -34,7 +34,7 @@ Sample of default.json
 ```
    
 ### Run agent  
-`node agent.js > /dev/null`
+`node agent.js & > /dev/null`
 
 All done! have a fun.
 
