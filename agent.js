@@ -28,6 +28,7 @@ var loop = 0;
 var current_load = 0;
 var pod_run_current = 0;
 var uptime = 0;
+var health = "";
 
 /* eventlimitter */
 setInterval(function() {
@@ -57,7 +58,15 @@ setInterval(function() {
 		pod_run_current = stdout;
   	}
 	});
-      var finalPayload = "health=OK" + "&load=" + current_load + "&pod_run_current=" + pod_run_current + "&uptime=" + si.time().uptime;
+
+      if(current_load > 70) {
+	health = "WARN";
+      }
+      else {
+	health = "OK";
+      }
+
+      var finalPayload = "health=" + health + "&load=" + current_load + "&pod_run_current=" + pod_run_current + "&uptime=" + si.time().uptime;
       console.log(finalPayload);
       mqttClient.publish(`${mqtt_baseTopic}/${device_id}`,finalPayload)
       count = 0;
