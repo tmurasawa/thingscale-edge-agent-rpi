@@ -40,7 +40,15 @@ All done! have a fun.
 
 
 ## for docker
-TBD
+### Pulling agent and run
+```
+docker pull tmura6781/thingscale-edge-agent-rpi:latest
+docker images|grep thingscale
+docker run -d -e DEVICE_ID=<device_id> -e USER_ID=<thingscale_user_id> -e <device_token> tmura6781/thingscale-edge-agent-rpi:latest
+```
+
+All done! have a fun.
+
 
 # Acknowledgement
 Confirmed environment:  
